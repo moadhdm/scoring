@@ -1,0 +1,14 @@
+name: scoring-fraude
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pandas>=2.2
+  - numpy
+  - scikit-learn>=1.5      # TargetEncoder a cross-fitting + class_weight HGB
+  - pyreadstat             # lecture du .sas7bdat
+  - pyarrow                # lecture/ecriture parquet
+  - openpyxl               # ecriture des echantillons .xlsx
+  - matplotlib
+  - seaborn
+  # jupyter retiré : chemin trop long sur Windows (MAX_PATH)
